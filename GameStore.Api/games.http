@@ -1,0 +1,30 @@
+POST http://localhost:5121/games
+Content-Type: application/json
+
+{
+    "name" : "Super Mario Bros. Wonder",
+    "genre" : "Platformer",
+    "price" : 59.99,
+    "releaseDate" : "2023-10-20"
+}
+
+###
+GET http://localhost:5121/games/25
+
+###
+GET http://localhost:5121/games
+
+###
+PUT http://localhost:5121/games/1
+Content-Type: application/json
+
+{
+    "name" : "Test Update",
+    "genre" : "RPG",
+    "price" : 60.00,
+    "releaseDate" : "2023-10-21"
+}
+
+###
+DELETE http://localhost:5121/games/1
+Content-Type: application/json
